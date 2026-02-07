@@ -6,7 +6,7 @@ const tabs = [
   { id: 'tab-3', title: 'Tab 3', content: 'Some text 3' },
 ];
 
-export const TabsPage = () => {
+export const TabsPage: React.FC = () => {
   const { tabId } = useParams<{ tabId: string }>();
   const activeTab = tabs.find(tab => tab.id === tabId);
 
